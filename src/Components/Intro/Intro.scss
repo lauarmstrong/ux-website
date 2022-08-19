@@ -1,0 +1,31 @@
+
+
+.hero-image {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../../../public/images/graffiti_unsplash.jpeg");
+    height: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.hero-text {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+
+.chevron {
+    color: white;
+}
+
+.chevron-icon {
+    font-size: 50px;
+    color: white;
+    position: absolute;
+    bottom: 10%;
+    left: 49%;
+}

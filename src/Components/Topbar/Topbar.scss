@@ -1,0 +1,78 @@
+@import '../../global.scss';
+
+.topbar {
+    background-color: white;
+    color: $darkBlue;
+    width: 100%;
+    height: 70px;
+    position: fixed;
+    top: 0;
+    z-index: 2;
+    transition: all 1s ease;
+
+    .wrapper{
+        padding: 10px 30px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .logo {
+        text-decoration: none;
+        font-size: 40px;
+        font-weight: 700;
+        color: inherit;
+    }
+
+    .right-side {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        .topbar-links {
+            a{
+                text-decoration: none;
+            }
+            span {
+                margin-right: 80px;
+                font-size: 24px;
+                cursor: pointer;
+                color: $darkBlue;
+            }
+            span:hover {
+                text-decoration: underline;
+                color: $darkPink;
+            }
+        }
+
+        .menu-icon{
+            cursor: pointer;
+            width: 32px;
+            height: 30px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            
+            span {
+                width: 100%;
+                height: 3px;
+                background-color: $darkBlue;
+                transition: all 0.5s ease;
+            }
+        }
+    }
+
+    &.active {
+        .menu-icon{
+            .line2 {
+                transform: rotate(45deg);
+            }
+            .line1 {
+                transform:translateY(13px) rotate(-45deg);
+            }
+            .line3 {
+                transform:translateY(-14px) rotate(-45deg);
+            }
+        }
+    }
+}
